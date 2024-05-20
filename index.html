@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA Scoreboard</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   
+  </head>
+  <body>
+    <h1>NBA Scoreboard Challenge</h1>
+    <container>
+      <div class="timer">
+        <div class="time">10:00</div>
+      </div>
+      <div class="teamLogo-1">
+        <img src="wizards.png" alt="Team 1 Logo">
+      </div>
+      <div class="teamLogo-2">
+        <img src="heat.png" alt="Team 2 Logo">
+      </div>
+      <div class="team-1">
+        <div class="teamName">WIZARD</div>
+        <div class="teamScoreLeft">0</div>
+      </div>
+      <div class="logo">
+        <img src="NBA_logo.png" alt="NBA Logo" />
+      </div>
+      <div class="team-2">
+        <div class="teamName">HEAT</div>
+        <div class="teamScoreRight">0</div>
+      </div>
+
+      <div class="btnsLeft">
+        <button type="button" onclick="pointsLeft1()" class="one-Left">+1</button>    
+        <button type="button" onclick="pointsLeft2()" class="twoLeft">+2</button>
+        <button type="button" onclick="pointsLeft3()" class="threeLeft">+3</button>
+      </div>
+      <div class="btnsRight">
+        <button type="button" onclick="pointsRight1()" class="oneRight">+1</button>    
+        <button type="button"  onclick="pointsRight2()" class="twoRight">+2</button>
+        <button type="button"  onclick="pointsRight3()" class="threeRight">+3</button>
+      </div>
+        
+      </div>
+      <div class="quarter">
+        <div class="label">QUARTER</div>
+        <div class="quarterTime">1</div>
+      </div>
+    </container>
+<div class="btns-controls">
+    <div class="play-btn">
+        <button type="button" onclick="start()" class="play">Play</button>
+    </div>
+    <div class="pause-btn">
+        <button type="button" onclick="pausar()" class="pause">Pause</button>
+    </div>
+    <div class="restart-btn">
+      <button type="button" onclick="restart()" class="restart">Restart</button>
+    </div>
+</div>
+  </body>
+  <script src="script.js"></script>
+</html>
